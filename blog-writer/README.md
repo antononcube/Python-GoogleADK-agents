@@ -80,6 +80,8 @@ flowchart TB
     R --> CE
     J -.-> AD
 
+    J --> |NEEDS_WORK| W
+    
     classDef agent fill:#454545,stroke:#777777,color:#eeeeee,stroke-width:1.5px
     classDef tool fill:#454545,stroke:#777777,color:#eeeeee,stroke-width:1.5px,stroke-dasharray:5 4
 
@@ -91,4 +93,8 @@ flowchart TB
 After several experiments using Ollama models (like, "gpt-oss:20b" or "nemotron-3.5-lightning:latest") 
 or "big" OpenAI models ("gpt-5.6-terra" and "gpt-5.6-luna") certain manual tunings of the prompts in the nodes were made.
 (And the results seem much better.)
+
+Several [RakuForPrediction](https://rakuforprediction.wordpress.com) blog posts were enhanced with this agent using
+"comprehensive" initial (human-made) drafts.
+
 
